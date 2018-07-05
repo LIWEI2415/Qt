@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/myimages">
+        <file>images/close_512px_1142186_easyicon.net.png</file>
+        <file>images/copy_256px_1139197_easyicon.net.png</file>
+        <file>images/cut_edit_128px_16040_easyicon.net.png</file>
+        <file>images/document_save_32px_16893_easyicon.net.png</file>
+        <file>images/documents_files_128px_11652_easyicon.net.png</file>
+        <file>images/emblem_note_128px_15992_easyicon.net.png</file>
+        <file>images/exit_out_128px_10885_easyicon.net.png</file>
+        <file>images/Internet_Lookup_Folder_255px_1123089_easyicon.net.png</file>
+        <file>images/open_512px_1142209_easyicon.net.png</file>
+        <file>images/paste_512px_1175635_easyicon.net.png</file>
+        <file>images/Save_256px_1093707_easyicon.net.png</file>
+        <file>images/stock_undo_128px_43395_easyicon.net.png</file>
+    </qresource>
+</RCC>

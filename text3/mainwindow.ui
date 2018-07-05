@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="actionnew_N"/>
+    <addaction name="actionopen_O"/>
+    <addaction name="actionclose_C"/>
+    <addaction name="separator"/>
+    <addaction name="actionsave_S"/>
+    <addaction name="actionsave_as_A"/>
+    <addaction name="separator"/>
+    <addaction name="actionexit_X"/>
+   </widget>
+   <widget class="QMenu" name="menu_E">
+    <property name="title">
+     <string>编辑(&amp;E)</string>
+    </property>
+    <addaction name="actionbackout_Z"/>
+    <addaction name="separator"/>
+    <addaction name="actioncopy_C"/>
+    <addaction name="actioncut_X"/>
+    <addaction name="actionpaste_V"/>
+    <addaction name="separator"/>
+    <addaction name="actionfind_F"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+    <addaction name="actionimprint"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_E"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionsave_S"/>
+   <addaction name="actionnew_N"/>
+   <addaction name="actionsave_as_A"/>
+   <addaction name="separator"/>
+   <addaction name="actionbackout_Z"/>
+   <addaction name="actioncopy_C"/>
+   <addaction name="actioncut_X"/>
+   <addaction name="actionpaste_V"/>
+   <addaction name="separator"/>
+   <addaction name="actionfind_F"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionnew_N">
+   <property name="icon">
+    <iconset resource="myicon.qrc">
+     <normaloff>:/myimages/images/documents_files_128px_11652_easyicon.net.png</normaloff>:/myimages/images/documents_files_128px_11652_easyicon.net.png</iconset>
+   </property>
+   <property name="text">
+    <string>new(&amp;N)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionopen_O">
+   <property name="icon">
+    <iconset resource="myicon.qrc">
+     <normaloff>:/myimages/images/open_512px_1142209_easyicon.net.png</normaloff>:/myimages/images/open_512px_1142209_easyicon.net.png</iconset>
+   </property>
+   <property name="text">
+    <string>open(&amp;O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionclose_C">
+   <property name="icon">
+    <iconset resource="myicon.qrc">
+     <normaloff>:/myimages/images/close_512px_1142186_easyicon.net.png</normaloff>:/myimages/images/close_512px_1142186_easyicon.net.png</iconset>
+   </property>
+   <property name="text">
+    <string>close(&amp;C)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionsave_S">
+   <property name="icon">
+    <iconset resource="myicon.qrc">
+     <normaloff>:/myimages/images/Save_256px_1093707_easyicon.net.png</normaloff>:/myimages/images/Save_256px_1093707_easyicon.net.png</iconset>
+   </property>
+   <property name="text">
+    <string>save(&amp;S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionsave_as_A">
+   <property name="icon">
+    <iconset resource="myicon.qrc">
+     <normaloff>:/myimages/images/document_save_32px_16893_easyicon.net.png</normaloff>:/myimages/images/document_save_32px_16893_easyicon.net.png</iconset>
+   </property>
+   <property name="text">
+    <string>save as(&amp;A)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionexit_X">
+   <property name="icon">
+    <iconset resource="myicon.qrc">
+     <normaloff>:/myimages/images/exit_out_128px_10885_easyicon.net.png</normaloff>:/myimages/images/exit_out_128px_10885_easyicon.net.png</iconset>
+   </property>
+   <property name="text">
+    <string>exit(&amp;X)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionbackout_Z">
+   <property name="icon">
+    <iconset resource="myicon.qrc">
+     <normaloff>:/myimages/images/stock_undo_128px_43395_easyicon.net.png</normaloff>:/myimages/images/stock_undo_128px_43395_easyicon.net.png</iconset>
+   </property>
+   <property name="text">
+    <string>backout(&amp;Z)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actioncopy_C">
+   <property name="icon">
+    <iconset resource="myicon.qrc">
+     <normaloff>:/myimages/images/copy_256px_1139197_easyicon.net.png</normaloff>:/myimages/images/copy_256px_1139197_easyicon.net.png</iconset>
+   </property>
+   <property name="text">
+    <string>copy(&amp;C)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actioncut_X">
+   <property name="icon">
+    <iconset resource="myicon.qrc">
+     <normaloff>:/myimages/images/cut_edit_128px_16040_easyicon.net.png</normaloff>:/myimages/images/cut_edit_128px_16040_easyicon.net.png</iconset>
+   </property>
+   <property name="text">
+    <string>cut(&amp;X)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionpaste_V">
+   <property name="icon">
+    <iconset resource="myicon.qrc">
+     <normaloff>:/myimages/images/paste_512px_1175635_easyicon.net.png</normaloff>:/myimages/images/paste_512px_1175635_easyicon.net.png</iconset>
+   </property>
+   <property name="text">
+    <string>paste(&amp;V)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionfind_F">
+   <property name="icon">
+    <iconset resource="myicon.qrc">
+     <normaloff>:/myimages/images/Internet_Lookup_Folder_255px_1123089_easyicon.net.png</normaloff>:/myimages/images/Internet_Lookup_Folder_255px_1123089_easyicon.net.png</iconset>
+   </property>
+   <property name="text">
+    <string>find(&amp;F)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionimprint">
+   <property name="icon">
+    <iconset resource="myicon.qrc">
+     <normaloff>:/myimages/images/emblem_note_128px_15992_easyicon.net.png</normaloff>:/myimages/images/emblem_note_128px_15992_easyicon.net.png</iconset>
+   </property>
+   <property name="text">
+    <string>imprint</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="myicon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
